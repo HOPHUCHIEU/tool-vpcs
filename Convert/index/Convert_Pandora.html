@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÁCH CONTENT VPCS</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="title">
+        <h1><a href="https:/zalo.me/0356241423"target="_blank" class="animate-charcter">HIẾU PANDORA</a></h1>
+        <img src="/Convert/img/facebook-verified-badge-01-scaled.webp" alt="">
+    </div>
+
+    <div id="inputContainer">
+        <textarea id="inputText" placeholder="Nhập nội dung cần lách từ vpcs"></textarea>
+        <div id="buttonsContainer">
+            <button class="button" id="coverts" onclick="convertText()">Chuyển đổi</button>
+            <button class="button" id="delete"onclick="clearText()">Xóa</button>
+        </div>
+    </div>
+
+    <div id="violationsContainer">
+        <div id="violationsBeforeCount">Từ vi phạm trước chuyển đổi: <span>0</span></div>
+        <div id="violationsAfterCount">Từ vi phạm sau chuyển đổi: <span>0</span></div>
+    </div>
+
+    <div class="outputContainer">
+        <textarea type="text" id="outputText" placeholder="Nội dung đã được lách từ vpcs"readonly></textarea>
+       <div id="buttonsContainer">
+        <button class="button" id="copyButton" onclick="copyToClipboard()">Sao Chép</button>
+        <button class="button" id="copyButton" onclick="showVPCS()">Xem từ VPCS</button>
+       </div>
+    </div>
+
+    <div class="showVPCS">
+        <textarea type="text" id="outputTextVPCS" placeholder="Từ VPCS có trong bài"readonly></textarea>
+       <div id="buttonsContainer">
+        <button class="button" id="copyButton" onclick="Exit()">Quay lại</button>
+       </div>
+    </div>
+
+    <script src="/Convert/index/App.js"></script>
+</body>
+
+</html>
